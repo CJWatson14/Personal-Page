@@ -1,4 +1,5 @@
 /* General body styling */
+
 body{
     background-image: url("media/pexels-samandgos-709552.jpg");
     background-size: cover;
@@ -7,8 +8,8 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100;
-    
+    height: 100vh;
+    margin: 0;
 }
 
 .home-body{
@@ -19,8 +20,35 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100;  
+    height: 100vh;  
+
     
+}
+
+/*Footer Style*/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 50px;
+}
+
+.footer-content {
+    flex: 1; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s ease-out;
+    backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
 }
 
 /* Navigation Styles */
@@ -127,6 +155,7 @@ article {
     box-sizing: border-box;
     opacity: 0;
     animation: fadeIn 2s forwards;
+    margin-bottom: 0;
 }
 
 /* Fade-in Animation */
@@ -182,7 +211,7 @@ article .article-text {
     padding: 20px;
     box-sizing: border-box;
     transition: 0.3s ease-out;
-    padding-top: 200px;
+    padding-top: 150px;
     
 }
 
