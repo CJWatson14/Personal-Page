@@ -2,13 +2,20 @@
 console.log("Script is running!");
 
 // Select the menu toggle button and navigation links
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-// Toggle the visibility of nav links when the hamburger button is clicked
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    if (menuToggle && navLinks) {  // Prevent errors if elements are missing
+        menuToggle.addEventListener("click", function () {
+            console.log("Menu button clicked!");  // Debugging log
+            navLinks.classList.toggle("active");
+        });
+    } else {
+        console.error("Menu toggle or nav links not found!");
+    }
 });
+
 
 
 // Initialize EmailJS
@@ -36,4 +43,4 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         submitButton.disabled = false;
         submitButton.textContent = "Send Message";  
     });
-}
+});

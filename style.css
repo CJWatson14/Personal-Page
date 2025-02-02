@@ -205,30 +205,8 @@ a {
     color: inherit;
 }
 
-/* Responsive Styles for smaller screens*/
-@media (max-width: 768px) {
-    body {
-        justify-content: flex-start;
-    }
 
-    article {
-        margin-top: 120px; 
-    }
 
-    .content-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    aside {
-        margin-bottom: 20px;
-    }
-
-    article .article-text {
-        max-width: 100%; 
-    }
-}
 
 
 /*--------------------------------------------------------------------*/
@@ -363,7 +341,7 @@ textarea {
 }
 
 button {
-    background-color: #8f8d8d; /* Matching button color */
+    background-color: #8f8d8d; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -375,17 +353,7 @@ button {
 }
 
 button:hover {
-    background-color: #7a7a7a; /* Slightly darker when hovering */
+    background-color: #7a7a7a; 
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .contact-form-section {
-        padding: 20px;
-        margin-top: 60px;
-    }
 
-    .contact-form-section h2 {
-        font-size: 20px;
-    }
-}
