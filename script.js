@@ -24,21 +24,16 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const email = formData.get('email');
     const message = formData.get('message');
 
-    // Send email using EmailJS
-    emailjs.send('service_fs8ih1w', 'template_ziqe6wz', {
-        name: name,
-        email: email,
-        message: message
-    })
+    // Send the form data to EmailJS
+    emailjs.sendForm("service_fs8ih1w", "template_ziqe6wz", form)
     .then(function(response) {
-        console.log('Success:', response);
-        alert('Your message has been sent successfully!');
-        // Clear form
-        document.getElementById('contact-form').reset();
+        alert("Message sent successfully!");
+        form.reset();  // Reset the form fields
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Message";  
     }, function(error) {
-        console.error('Error:', error);
-        alert('Something went wrong, please try again.');
+        alert("Failed to send message. Please try again.");
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Message";  
     });
-});
-
-form.reset(); 
+}
