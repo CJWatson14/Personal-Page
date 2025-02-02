@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <div class="nav-links">
+            <a  href="index.html" title="Home Page">Home</a>
+            <a href="about_me.html"  title="About Me Page">About Me</a>
+            <a href="personal_projects.html" title="Personal Projects Page">Personal Projects</a>
+            <a href="contact_page.html" class="active" title="Contact Page">Contact</a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/CJWatson14" target="_blank">
+                <img src="media/Github-Logo.png" width="50" height="45" alt="My GitHub Page" title="My GitHub Page">
+            </a>
+            <a href="https://www.linkedin.com/in/connor-watson-876914320/" target="_blank">
+                <img src="media/Linkedin-logo.png" width="50" height="45" alt="My LinkedIn Page" title="My LinkedIn Page">
+            </a>
+        </div>
+    </nav>
+    
+    <article class="article-contact">
+      <div class="content-container-contact">
+        <div class="article-text-contact">
+          <h1>How To Contact Me</h1>
+           <p>Please Find Below Ways Of Contacting Me</p>
+
+           <h3>My Socials</h3>
+            <a class="social-link-contact" href="https://www.linkedin.com/in/connor-watson-876914320/" target="_blank" title="My Linkedin">LinkedIn</a>
+            <br>
+            <a class="social-link-contact" href="https://github.com/CJWatson14" target="_blank" title="My GitHub">My GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <h2>Contact Me Directly</h2>
+      <form id="contact-form" onsubmit="sendEmail(event)">
+          <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+          </div>
+
+          <div class="form-group">
+              <button type="submit">Send Message</button>
+          </div>
+      </form>
+  </section>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your User ID
+        emailjs.init("qjysVXvR36YoH9JZ0");
+
+        // Function to send email
+        function sendEmail(event) {
+            event.preventDefault();  // Prevents the default form submission behavior
+            
+            const form = document.getElementById("contact-form");
+
+            // Send the form data to EmailJS
+            emailjs.sendForm("service_fs8ih1w", "template_ziqe6wz", form)
+                .then(function(response) {
+                    alert("Message sent successfully!");
+                }, function(error) {
+                    alert("Failed to send message. Please try again.");
+                });
+        }
+    </script>
+  </body>
+</html>
