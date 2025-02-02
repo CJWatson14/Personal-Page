@@ -103,6 +103,11 @@ nav a.active-page {
     article {
         margin-top: 180px;
     }
+    nav a.active-page {
+        color: #8f8d8d;
+        transform: scale(1.2);
+        border-bottom: 3px solid;
+    }
 
 }
 
