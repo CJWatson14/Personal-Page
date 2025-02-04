@@ -28,7 +28,8 @@ body{
 /*Footer Style*/
 
 
-footer {display: flex;
+footer {
+    display: flex;
     flex-direction: column;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     width: 100%;
@@ -182,40 +183,22 @@ article .article-text {
 
 
 /*home article*/
-.content-container-home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    height: auto
-
-}
 
 .home_article{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: flex-start;
+    justify-content: center;
     text-decoration: none;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 600px;
     width: fit-content;
-    padding: 20px;
+    padding-top: 100px;
     box-sizing: border-box;
     transition: 0.3s ease-out;
-    padding-top: 150px;
-    
-}
-
-.home_article * {
-    margin: 0;
-   
 }
 
 .article-text-home{
     max-width: 600px;
-    
     
 }
 
