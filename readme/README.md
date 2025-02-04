@@ -3,6 +3,8 @@
 
 ## Purpose of my online Portfolio ## 
 
+I created this website to showcase my skills, education, and current projects, offering a comprehensive look into my expertise and passions. Whether you're a potential employer, collaborator, or someone interested in learning more about my work
+
 
 
 ## The value my Portfolio brings ##
