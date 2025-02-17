@@ -1,369 +1,128 @@
-/* General body styling */
+html {
+    scroll-behavior: smooth;
+}
 
 body{
-    background-image: url("media/pexels-samandgos-709552.jpg");
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    max-width: 100%;
+    
+}
+
+header{
+    margin-top: 10px;
+}
+
+a{
+text-decoration: none;
+}
+
+.me{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.picture_me{
+    animation-duration: 2s;
+    animation-name: slideup;
+}
+
+.picture_me img{
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px rgb(122, 119, 119);
+}
+
+@keyframes slideup {
+    from {
+        margin-top: -200%;
+    }
+    to {
+        margin-bottom: 0%;
+    }
+}
+
+.me h1{
+    font-size: 9.375rem;
+    font-weight: 1000;
+    color: rgb(0, 110, 255);
+    text-shadow: 3px 3px 3px  rgb(122, 119, 119);
+}
+
+.me p{
+    font-size: 1.25rem;
+    font-weight: 550;
+}
+
+
+.me h1, p {
+
+    animation-duration: 2s;
+    animation-name: slidedown;
+}
+
+@keyframes slidedown {
+    from {
+        margin-top: -200%;
+    }
+    to {
+        margin-bottom: 1.5%;
+    }
+}
+
+.me button{
+    box-shadow: 5px 5px 5px 5px rgb(122, 119, 119);
+    margin: 5px;
+
+}
+
+.social_links_linkedin{
+    width: 80px;
+    height: 80px;
+    background-image: url(media/linkedin-job-community-svgrepo-com.svg);
     background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    box-shadow: 5px 5px 5px 5px rgb(122, 119, 119);
+    border-radius: 25%;
+
+
 }
 
-.home-body{
-    background-image: url("media/pexels-samandgos-709552.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;  
-
-    
-}
-
-/*Footer Style*/
-
-
-footer {
-    display: flex;
-    flex-direction: column;
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    width: 100%;
-    margin-top: auto;
-    padding-top: 50px;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    transition: 0.3s ease-out;
-    backdrop-filter: blur(8px) brightness(1.2);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-}
-
-/* Navigation Styles */
-nav {
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    padding: 10px;
-    align-items: center;
-    transition: 0.3s ease-out;
-    backdrop-filter: blur(8px) brightness(1.2);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    z-index: 1000; 
-}
-
-nav .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a {
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    font-weight: 600;
-    margin: 20px;
-    color: #000000;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-    text-decoration: none;
-}
-
-nav a:hover,
-nav a.active-page {
-    color: #8f8d8d;
+.social_links_linkedin:hover{
+    background-image: url(media/linkedin-job-community-svgrepo-com-blue.svg);
     transform: scale(1.2);
-    border-bottom: 3px solid;
+    transition: ease 0.3s ;
 }
 
-/* Mobile Menu Button */
-.menu-toggle {
-    display: none; 
-    font-size: 40px;
-    background: none;
-    border: none;
-    color: white;
+.social_links_github{
+    width: 80px;
+    height: 80px;
+    background-image: url(media/github-logo-code-open-sourse-oneline-svgrepo-com.svg);
+    background-size: cover; 
+    box-shadow: 5px 5px 5px 5px rgb(122, 119, 119);
+    border-radius: 25%;
 }
 
-/* Makes Nav Bar Cross-Compatable*/
-@media screen and (max-width: 768px ) {
-    nav {
-        flex-direction: column; 
-        align-items: flex-start;
-        padding: 15px;
-    }
-
-    nav .nav-links {
-        display: none; 
-        flex-direction: column; 
-        width: 100%; 
-        align-items: flex-start;
-    }
-
-    nav .nav-links.active {
-        display: flex; 
-    }
-
-    nav a {
-        margin: 10px 0; 
-        font-size: 24px; 
-    }
-
-    .menu-toggle {
-        display: block; 
-    }
-    article {
-        margin-top: 180px;
-    }
-    nav a.active-page {
-        color: #8f8d8d;
-        transform: scale(1.2);
-        border-bottom: 3px solid;
-    }
-
-}
-
-
-/* Article Section Styling */
-article {
-    margin-top: 30px; 
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    max-width: 800px;
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-    margin-bottom: 0;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Content Container Styling */
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-/* Image styling in the article */
-aside {
-    margin-right: 20px;
-}
-
-article .article-text {
-    max-width: 600px;
-}
-
-/*--------------------------------------------------------------------*/
-
-
-/*home article*/
-
-.home_article{
-    display: flex;
-    flex-direction: flex-start;
-    justify-content: center;
-    text-decoration: none;
-    border-radius: 10px;
-    max-width: 600px;
-    width: fit-content;
-    padding-top: 100px;
-    box-sizing: border-box;
-    transition: 0.3s ease-out;
-}
-
-.article-text-home{
-    max-width: 600px;
-    
-}
-
-/* Hover Effect on the Home Article Link */
-.home_article:hover {
+.social_links_github:hover{
+    background-image: url(media/github-logo-code-open-sourse-oneline-svgrepo-com-blue.svg);
     transform: scale(1.2);
-    color: #8f8d8d;
-    transition: 0.3s ease;
+    transition: ease 0.3s ;
 }
 
-/* Ensuring the link inherits color from the text */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-
-
-/*--------------------------------------------------------------------*/
-
-
-/* Personal Project Style Page*/
-
-.content-container-pp{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    height: auto
-
-}
-
-.article-pp{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-decoration: none;
-    border-radius: 10px;
-    max-width: 800px;
-    width: fit-content;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: 0.3s ease-out;
-    
-}
-
-.article-pp img{
-    width: 300px; 
-    height: 300px; 
-    object-fit: cover; 
-    border-radius: 10px;
-}
-
-.article-text-pp{
-    max-width: 600px;
-    
-    
-}
-
-.aside-pp {
-    margin-right: 20px;
-}
-
-/*--------------------------------------------------------------------*/
-
-/* Contact Page Style*/
-
-.content-container-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    height: auto;
-}
-
-.article-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-decoration: none;
-    border-radius: 10px;
-    max-width: 800px;
-    width: fit-content;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: 0.3s ease-out;
-}
-
-.article-text-contact {
-    max-width: 600px;
-}
-
-/* Social links hover effect */
-.social-link-contact:hover {
-    color: #8f8d8d;
-    transform: scale(1.2);
-    border-bottom: 3px solid;
-}
-
-/* Styling the Contact Form Section */
-.contact-form-section {
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.9); 
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    margin: 40px auto;
-    animation: fadeIn 2s forwards;
-    
-}
-
-.contact-form-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
+.first-name , .last-name{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    display: inline-block;
+    font-size: 2rem;
+
 }
 
-.form-group {
-    margin-bottom: 15px;
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+.first-name{
+    color: rgb(0, 110, 255);
+    font-weight: 700;
+
 }
 
-label {
-    font-size: 14px;
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
+.last-name{
+    color: rgb(122, 119, 119);
+    font-weight: 100; 
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
-    background-color: #8f8d8d; 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #7a7a7a; 
-}
 
 
