@@ -5,8 +5,6 @@ html {
 body{
     background-color: rgb(255, 255, 255);
     max-width: 100%;
-    max-width: 100%;
-    
 }
 
 header{
@@ -23,22 +21,15 @@ text-decoration: none;
 
 .picture_me{
     animation-duration: 2s;
-    animation-name: slideup;
+    animation-name: slidedown
 }
 
 .picture_me img{
     border-radius: 10%;
     box-shadow: 5px 5px 5px 5px rgb(122, 119, 119);
+    margin-top: -50px;
 }
 
-@keyframes slideup {
-    from {
-        margin-top: -200%;
-    }
-    to {
-        margin-bottom: 0%;
-    }
-}
 
 .me h1{
     font-size: 9.375rem;
@@ -53,18 +44,15 @@ text-decoration: none;
 }
 
 
-.me h1, p {
-
-    animation-duration: 2s;
-    animation-name: slidedown;
-}
 
 @keyframes slidedown {
     from {
-        margin-top: -200%;
+        transform: translateY(-200%);
+        opacity: 0;
     }
     to {
-        margin-bottom: 1.5%;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -73,6 +61,16 @@ text-decoration: none;
     margin: 5px;
 
 }
+
+.front-page{
+    width: 100%;
+    animation-duration: 2s;
+    animation-name: slidedown;
+    max-height: 100vh;
+  
+}
+
+
 
 .social_links_linkedin{
     width: 80px;
@@ -109,7 +107,7 @@ text-decoration: none;
 .first-name , .last-name{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -124,5 +122,72 @@ text-decoration: none;
     font-weight: 100; 
 }
 
+.about-me{
+    background-color: rgb(122, 119, 119, 0.5);
+    width: 100%;
+    height: 102vh;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    border-radius: 10px;
+    padding-right: 5%;
+}
+
+.picture-about-me img{
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px rgb(82, 79, 79);
+    margin-top: 20%;
+}
+
+.about-me p{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 550;
+    padding-top: 15%;
+}
+
+.about-me h1{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 5rem;
+    font-weight: 1000;
+    color: rgb(0, 110, 255);
+    text-shadow: 3px 3px 3px  rgb(122, 119, 119);
+
+}
+
+#about-me-title{
+    padding-top: 100px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: rgb(0, 110, 255);
+    text-align: center;
+    margin-bottom: -40px;
+    font-weight: 1000;
+    text-shadow: 3px 3px 3px  rgb(122, 119, 119);
+    font-size: 4rem;
+    margin-top: -90px;   
+}
+
+
+.skills h3{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: rgb(0, 110, 255);
+    text-align: center;
+
+}
+
+.skills p{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 1rem;
+    font-weight: 0;
+
+}
+
+.skills h1{
+    text-align: center;
+}
+
+.card{
+    padding-top: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(82, 79, 79);
+}
 
 
