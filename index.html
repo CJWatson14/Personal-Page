@@ -29,7 +29,7 @@
 <!----------------->
 
 
-<article>
+<article id="first-section">
     <!--Picture of me -->
     <div class="container">
       <div class="front-page">         
@@ -63,96 +63,129 @@
   <div  class="about-me">
    <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-3">
+        <div class="col-sm-3 d-flex-fluid">
           <div class="picture-about-me">
-            <img src="media/me2.jpg" height="500"></div>
+            <img src="media/me2.jpg" alt="Picture of me and my beautiful partner" height="600" class="mx-auto d-block"></div>
           </div>
-       <div class="col-xl-3">
+       <div class="col-xl-3" class="mx-auto d-block">
         <h3 id="about-me-title">About Me</h3>     
         <p>I have several years of experience as a truck driver, where I developed excellent time-management skills, attention to detail, and a high level of responsibility. 
           This role also reinforced my ability to work independently, solve complex logistical problems, and adapt to different environments, skills that are transferable to my transition into web development. 
           Throughout my career, I have learned the importance of perseverance, communication, and efficiency, all of which I aim to apply in my new role in the tech industry.</p>
-      </div>
-      <div class="col-xl-6 d-flex-fluid">
-        
 
+          <p>Why not check out my projects below</p>
+          <a href="#my-projects"><button type="button" class="btn btn-outline-primary btn-lg" >My Projects</button></a>
+      </div>
+
+      <div class="col-xl-6">
       <div class="skills">
         <h1>Skills</h1>
+
         <div class="row row-cols-1 row-cols-md-3 g-4">
-
-          <div class="col" style="max-height: 50rem;">
-            <div class="card h-100">
-              <img src="/media/html-logo.svg" height="50" class="card-img-top" alt="HTML Logo">
-              <div class="card-body">
-                <h3 class="card-title">HTML</h3>
-                <p class="card-text" >Holding experience in structuring web pages, semantic markup, and integrating multimedia elements. 
-                  Skilled in responsive design, accessibility and best practices</p>
+          <div class="col">
+              <div class="card card-container h-100">
+                  <div class="card-body">
+                      <img src="media/html-logo.svg" height="50" class="card-img-top" alt="HTML Logo">
+                      <h3>HTML</h3>
+                      <p>Holding experience in structuring web pages, semantic markup, and integrating multimedia elements. 
+                      Skilled in responsive design, accessibility, and best practices.</p>
+                  </div>
               </div>
-            </div>
           </div>
-          
-          <div class="col" style="max-height: 50rem;">
-            <div class="card h-100">
-              <img src="/media/css-logo.svg" height="50" class="card-img-top" alt="HTML Logo">
-              <div class="card-body">
-                <h3 class="card-title">CSS</h3>
-                <p class="card-text" >I currently have alot of experience in styling, layout techniques, 
-                  and responsive design. While being proficient in Flexbox, Grid, animations, and transitions</p>
+      
+          <div class="col">
+              <div class="card card-container h-100">
+                  <div class="card-body">
+                      <img src="media/css-logo.svg" height="50" class="card-img-top" alt="CSS Logo">
+                      <h3>CSS</h3>
+                      <p>I currently have a lot of experience in styling, layout techniques, and responsive design. 
+                      While being proficient in Flexbox, Grid, animations, and transitions.</p>
+                  </div>
               </div>
-            </div>
           </div>
-
-          <div class="col" style="max-height: 50rem;">
-            <div class="card h-100">
-              <img src="/media/javascript-logo.svg" height="50" class="card-img-top" alt="HTML Logo">
-              <div class="card-body">
-                <h3 class="card-title">Java Script</h3>
-                <p class="card-text" >Familiar with JavaScript fundamentals, including variables, functions, loops, and event handling. 
-                  Able to manipulate the DOM, work with basic ES6 features, and implement simple interactivity on web pages.</p>
+      
+          <div class="col">
+              <div class="card card-container h-100">
+                  <div class="card-body">
+                      <img src="media/javascript-logo.svg" height="50" class="card-img-top" alt="JS Logo">
+                      <h3>JavaScript</h3>
+                      <p>Familiar with JavaScript fundamentals, including variables, functions, loops, and event handling. 
+                      Able to manipulate the DOM, work with basic ES6 features, and implement simple interactivity on web pages.</p>
+                  </div>
               </div>
-            </div>
           </div>
-          
-
-          <div class="col" style="max-height: 17rem;">
-            <div class="card h-100">
-              <img src="/media/react-logo.svg" height="50" class="card-img-top" alt="HTML Logo">
-              <div class="card-body">
-                <h3 class="card-title">React</h3>
-                <p class="card-text" >This is a longer card with supporting</p>
+      
+          <div class="col">
+              <div class="card card-container h-100">
+                  <div class="card-body">
+                      <img src="media/react-logo.svg" height="50" class="card-img-top" alt="React Logo">
+                      <h3>React</h3>
+                      <p>Familiar with components, props, and state management. Able to create simple interactive UIs and work with JSX.</p>
+                  </div>
               </div>
-            </div>
           </div>
-
-          <div class="col" style="max-height: 17rem;">
-            <div class="card h-100">
-              <img src="/media/redux-logo.svg" height="50" class="card-img-top" alt="HTML Logo">
-              <div class="card-body">
-                <h3 class="card-title">Redux</h3>
-                <p class="card-text" >This is a longer card with supporting</p>
+      
+          <div class="col">
+              <div class="card card-container h-100">
+                  <div class="card-body">
+                      <img src="media/redux-logo.svg" height="50" class="card-img-top" alt="Redux Logo">
+                      <h3>Redux</h3>
+                      <p>Familiar with Redux basics, including actions, reducers, and the store. Able to manage simple application state and use Redux with React. Learning how to handle middleware and asynchronous actions with tools like Redux Thunk.</p>
+                  </div>
               </div>
-            </div>
           </div>
-
-          <div class="col" style="max-height: 17rem;">
-            <div class="card h-100">
-              <img src="/media/typescript-logo.svg" height="50" class="card-img-top" alt="HTML Logo">
-              <div class="card-body">
-                <h3 class="card-title">Type-Script</h3>
-                <p class="card-text" >This is a longer card with supporting</p>
+      
+          <div class="col">
+              <div class="card card-container h-100">
+                  <div class="card-body">
+                      <img src="media/typescript-logo.svg" height="50" class="card-img-top" alt="TypeScript Logo">
+                      <h3>TypeScript</h3>
+                      <p>Proficient in TypeScript, with experience in type annotations, interfaces, and generics. Comfortable working with TypeScript in React and JavaScript projects to enhance type safety and maintainability. Familiar with advanced types, utility types, and integrating TypeScript with APIs and third-party libraries.</p>
+                  </div>
               </div>
-            </div>
           </div>
-          </div>
-        </div>
-        </div>
-      </div>
       </div>
     </div>
+   </div>
   </div>
+</div>
+</div>
+</div>
+</div>
   
   </section>
 </article>
+
+
+<section class="fade-in">
+  <article id="my-projects">
+    <div class="container-fluid">
+      <div class="container text-center">
+        <div class="row align-items-end">
+          <div class="col">            
+          </div>
+          <div class="col">
+            <h1>Projects</h1>          
+          </div>
+          <div class="col">           
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </article>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="contact-me">
+      <div class="row">
+
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
